@@ -174,6 +174,8 @@ vim.keymap.set('n', '<leader>q', '<cmd>:qall<cr>', { desc = '[Q]uit' })
 
 vim.keymap.set('n', '<leader>s', '<cmd>:w<cr>', { desc = '[S]ave all' })
 
+vim.keymap.set('n', '<leader>i', '<cmd>:Git<cr>', { desc = 'G[I]t fugitive' })
+
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
 -- is not what someone will guess without a bit more experience.
@@ -869,6 +871,9 @@ require('lazy').setup({
       --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
       --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     end,
+  },
+  {
+    'tpope/vim-fugitive',
   },
 
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
