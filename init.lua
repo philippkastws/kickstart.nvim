@@ -174,7 +174,13 @@ vim.keymap.set('n', '<leader>q', '<cmd>:qall<cr>', { desc = '[Q]uit' })
 
 vim.keymap.set('n', '<leader>s', '<cmd>:w<cr>', { desc = '[S]ave all' })
 
-vim.keymap.set('n', '<leader>i', '<cmd>:Git<cr>', { desc = 'G[I]t fugitive' })
+vim.keymap.set('n', '<leader>i', '<cmd>:Git<cr>', { desc = 'G[i]t fugitive' })
+
+-- I just can't do it without!!!
+vim.keymap.set('n', '<leader>c', '<cmd>:bd<cr>', { desc = '[C]lose buffer (:bd)' })
+vim.keymap.set('n', '<leader>C', '<C-w>c', { desc = '[C]Window (ctrl-w c)' })
+vim.keymap.set('n', '<leader>w', '<C-W>w', { desc = 'Next [w]Window (ctrl-w w)' })
+vim.keymap.set('n', '<leader>m', '<C-W>o', { desc = '[M]aximize Window (ctrl-w o)' })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
